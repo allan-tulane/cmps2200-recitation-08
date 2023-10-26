@@ -1,1 +1,1 @@
-# cmps2200-recitation-08
+See `recitation-08.md`

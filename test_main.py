@@ -1,15 +1,5 @@
 from main import *
 
-def test_mst_from_points():
-    points = [('a', 5, 10), #(city_name, x-coord, y-coord)
-              ('b', 7, 12),
-              ('c', 2, 3),
-              ('d', 12, 3),
-              ('e', 4, 6),
-              ('f', 6, 7)]
-    tree = mst_from_points(points)
-    # check that the weight of the MST is correct.
-    assert round(sum(e[0] for e in tree), 2) == 19.04
 
 def test_prim():    
     ###TODO
@@ -37,3 +27,18 @@ def test_prim():
     assert min([sum1, sum2]) == 10
     assert max([sum1, sum2]) == 12
     ###    
+
+def test_euclidean_distance():
+    assert round(euclidean_distance(('a', 5, 10), ('b', 7, 12)), 2) == 2.83
+
+
+def test_mst_from_points():
+    points = [('a', 5, 10), #(city_name, x-coord, y-coord)
+              ('b', 7, 12),
+              ('c', 2, 3),
+              ('d', 12, 3),
+              ('e', 4, 6),
+              ('f', 6, 7)]
+    tree = mst_from_points(points)
+    # check that the weight of the MST is correct.
+    assert round(sum(e[0] for e in tree), 2) == 19.04

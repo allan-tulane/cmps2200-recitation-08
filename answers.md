@@ -10,6 +10,5 @@ Place all written answers from `recitation-08.md` here for easier grading.
 
 
 
-- **2)**
+- **1b)**
 
-- **4)**
